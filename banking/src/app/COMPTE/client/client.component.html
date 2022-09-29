@@ -1,0 +1,219 @@
+ <!------------------------- Header ---------------------------->
+<header>
+  <div class="header-area header-transparrent">
+    <div class="headder-top header-sticky">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-2">
+            <!-- Logo -->
+            <div class="logo">
+              <a  href="/accueil">
+                <img src="../../assets/images/logo2.png" style="width: 150px;" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-9">
+            <div class="menu-wrapper">
+              <!-- Main-menu -->
+              <div class="main-menu">
+                <nav class="d-none d-lg-block">
+                  <ul id="navigation">
+                    <li><a id="btnNav" routerLink="/mycompte" class="nav-link" routerLinkActive="active">Accueil</a></li>
+                    <li><a id="btnNav" routerLink="/operations" class="nav-link" routerLinkActive="active">Opérations</a></li>
+                    <li><a id="btnNav" routerLink="/demande" class="nav-link" routerLinkActive="active">Demande</a></li>
+                    <li><a id="btnNav" routerLink="/demande" class="nav-link" routerLinkActive="active">Reclamation</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- Header-btn -->
+              <div class="header-btn d-none f-right d-lg-block">
+                
+                <a  href="#"  style="color: white; margin-left: 25%; ">
+                  <i style="font-size: large; color: #76BB20;" class="fas fa-user">&nbsp;&nbsp; Rochdi Bahri</i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu -->
+          <div class="col-12">
+            <div class="mobile_menu d-block d-lg-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br><br><br><br><br>
+<!------------------------- Header ---------------------------->
+<div class="container-fluid">
+  <br><br>
+  <div class="container" id="container2">
+    <div class="form-group row">
+      <div class="col-lg-3">
+        <div class="card" style="width: 20rem; padding: auto;  box-shadow: 0px 3px 6px 0px rgb(110 107 110 / 39%);">
+          <div class="card-body">
+            <img src="../../assets/images/maison.jpg" style="margin-top: auto; width: 83%; " class="card-img-top" alt="...">
+            <h5 class="card-title">Credit maison</h5>
+            <p class="card-text">découvrir notre offre de credit pour l'achat d'un appartement ou maison...</p>
+            <button (click)="creditMaison(content)" type="button" style=" color: white;background-color: #76BB20; width: 12rem;" >Demander</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 20rem;   box-shadow: 0px 3px 6px 0px rgb(110 107 110 / 39%);">
+          <div class="card-body">
+            <img src="../../assets/images/voiture.jpg" style="margin-top: auto; width: 98%; " class="card-img-top" alt="...">
+            <h5 class="card-title">Credit voiture</h5>
+            <p class="card-text">découvrir notre offre de credit pour l'achat d'une voiture neuve...</p>
+            <button (click)="creditMaison(content)"  type="button" style=" color: white;background-color: #76BB20; width: 12rem;" >Demander</button>
+          </div>
+        </div> 
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 20rem;  box-shadow: 0px 3px 6px 0px rgb(110 107 110 / 39%);">
+          <div class="card-body">
+            <img src="../../assets/images/projet.jpg" style="margin-top: auto; width: 92%; " class="card-img-top" alt="...">
+            <h5 class="card-title">Créer votre projet</h5>
+            <p class="card-text">découvrir notre offre de credit pour démarrer votre projet...</p>
+            <button (click)="creditMaison(content)" type="button" style=" color: white;background-color: #76BB20; width: 12rem;" >Demander</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 20rem;  box-shadow: 0px 3px 6px 0px rgb(110 107 110 / 39%);">
+          <div class="card-body">
+            <img src="../../assets/images/b3.jpg" style="margin-top: auto; width: 100%; " class="card-img-top" alt="...">
+            <h5 class="card-title">Credit personnelle</h5>
+            <p class="card-text">découvrir notre offre de credit personnelle...</p>
+            <button (click)="creditMaison(content)" type="button" style=" color: white;background-color: #76BB20; width: 12rem;" >Demander</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <br><br>
+
+  <div class="container" id="container1">
+         <h2 style="text-align: center;"> <b>BLOGS</b> </h2>
+        <hr>
+    <div class="form-group row">
+      <div class="col-lg-3">
+        <div class="card text-center" style="width: 15rem; height: 500px; box-shadow: 0px 3px 6px 0px rgb(110 107 110 / 39%);">
+          <div class="card-header" style="background-color: #76BB20; color: aliceblue;">
+            BLOG 1
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Titre</h5>
+            <p class="card-text">-----</p>
+           
+          </div>
+          <div class="card-footer text-muted">
+            <button type="button" style=" color: white;background-color: #76BB20; width: 12rem;" >Voir detail</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card text-center" style="width: 15rem; height: 500px; box-shadow: 0px 3px 6px 0px rgb(110 107 110 / 39%);">
+          <div class="card-header" style="background-color: #76BB20; color: aliceblue;">
+            BLOG 1
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Titre</h5>
+            <p class="card-text">-----</p>
+           
+          </div>
+          <div class="card-footer text-muted">
+            <button type="button" style=" color: white;background-color: #76BB20; width: 12rem;" >Voir detail</button>
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-lg-3">
+        <div class="card text-center" style="width: 15rem; height: 500px; box-shadow: 0px 3px 6px 0px rgb(110 107 110 / 39%);">
+          <div class="card-header" style="background-color: #76BB20; color: aliceblue;">
+            BLOG 3
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Tittre</h5>
+            <p class="card-text">----</p>
+           
+          </div>
+          <div class="card-footer text-muted">
+            <button type="button" style=" color: white;background-color: #76BB20; width: 12rem;" >Voir detail</button>
+          </div>
+        </div>
+  
+      </div>
+      <div class="col-lg-3">
+        <div class="card text-center" style="width: 15rem; height: 500px; box-shadow: 0px 3px 6px 0px rgb(110 107 110 / 39%);">
+          <div class="card-header" style="background-color: #76BB20; color: aliceblue;">
+            BLOG 4
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Titre</h5>
+            <p class="card-text">----</p>
+           
+          </div>
+          <div class="card-footer text-muted">
+             <button type="button" style=" color: white;background-color: #76BB20; width: 12rem;" >Voir detail</button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+<!-------------- Footer ------------------------->
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+
+<!------------------------ Credit maison ------------------------->
+<div class="modal-dialog modal-lg" >
+  <ng-template #content let-modal  >
+    <div class="modal-header" >
+      <h4 class="modal-title" id="modal-basic-title"> Demande credit maison</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true"> × </span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form >
+        <div class="form-group row">
+          <div class="col-lg-12">
+            <h3>Votre solde est : 5 000 TND</h3>
+            <h5 class="card-title">Credit maison</h5>
+            <p class="card-text">découvrir notre offre de credit pour l'achat d'un appartement ou maison...</p>
+
+          </div>
+         
+        </div>
+       
+       <!-- <div [hidden]="erreurModifUser">
+          <p style=" font-weight: bold; color: red;">Erreur: vous avez oublié un champs ... </p>
+        </div>-->
+        <div class="form-group">
+          <input type="submit" value="Demander" class="btn btn-success"  >
+
+        </div>
+        <br><br>
+      </form>
+    </div>
+  </ng-template>
+</div>
+
+
+
+
+
+
+
+
+
+ <!-------------- Footer ------------------------->
+
+
+<app-footer></app-footer>
+

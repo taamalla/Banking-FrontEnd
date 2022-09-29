@@ -1,0 +1,286 @@
+  <!-- -------------------------Header ---------------------------->
+  <app-header-admin></app-header-admin>
+  <br><br><br><br><br><br>
+ 
+  <!----------------------------Aside------------------------------> 
+  <aside>
+    <div id="sidebar" class="nav-collapse " >
+      <ul class="sidebar-menu" id="nav-accordion">
+        <li class="mt">
+          <a (click)="accueil()" class="active" >
+            <i style="font-size: large" class="fa fa-home" aria-hidden="true"></i>
+            <span style="font-size: large">Accueil</span>
+          </a>
+        </li>
+        <li>
+          <a  (click)="formulaireAjoutAgent()" style="font-size: large" type="submit" >
+            <i style ="font-size: large" class="fa fa-plus-circle"></i>
+            <span>Ajouter un agent</span>
+          </a>
+        </li>
+        <li>
+          <a  (click)="tableListeAgents()" style="font-size: large" type="submit" >
+            
+            <i style ="font-size: large" class="fa fa-table"></i>
+            <span>Liste des agents </span>
+          </a>
+        </li>
+        <li>
+            <a (click)="tableListeClients()" style="font-size: large" type="submit" >
+              
+              <i style ="font-size: large" class="fa fa-table"></i>
+              <span>Liste des clients </span>
+            </a>
+          </li>
+
+        <li>
+          <a  style="font-size: large" type="submit" >
+              <i style ="font-size: large" class="fa fa-chevron-right" aria-hidden="true"></i>
+            <span>Logout </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!---------------------Ajouter un agent bancaire----------------->
+  <div class="container"  style=" width: 60%; position: fixed; margin-left: 20%; margin-top: 0%; " [hidden]="  afficherAjoutagent ">
+    <div class="form-group row" >           
+      <div >
+        <div  >
+          <div class="card" style="border-radius: 2%;">
+            <br>
+            <div class="card-header" style="background: none; ">
+              <h4 style="font-weight: bold;">Ajouter un agent bancaire  </h4>
+            </div>
+            <div class="card-body">
+              <form #f="ngForm">
+                 <!--  row 1 -->
+                <div class="form-group row">
+                  <div class="col-lg-6">
+                      <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input  class="form-control" type="text" placeholder="Name"  name="name" ngModel >
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input  class="form-control" type="text" placeholder="LastName"  name="lastname" ngModel>
+                      </div>
+        
+                  </div>
+                </div>
+                <!--  row 2 -->
+                <div class="form-group row">
+                  <div class="col-lg-6">
+                    <div class="input-group form-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                      </div>
+                      <input  class="form-control" type="text" placeholder="Username"  name="name" ngModel >
+                    </div>
+                  </div>   
+                  <div class="col-lg-6">
+                    <div class="input-group form-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                      </div>
+                      <input type="password"  class="form-control" placeholder="password" name="password" ngModel >
+                    </div>
+                  </div>
+                </div>
+                <!--  row 3 -->
+                <div class="form-group row">
+                  <div class="col-lg-6">
+                    <div class="input-group form-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                      </div>
+                      <input type="email" class="form-control" name="email" placeholder="Email"  ngModel>
+                    </div>       
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="input-group form-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-address-card"></i></span>
+                      </div>
+                      <input  class="form-control" type="text" placeholder="CIN"  name="lastname" ngModel>
+                    </div>
+                  </div>
+                </div>             
+                <!--  row 4 -->
+                <div class="form-group row">
+                  <div class="col-lg-6">
+                    <div class="input-group form-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                      </div>
+                      <select  class="form-control" name="adress" ngModel >
+                          <option value="ariana" >Ariana</option>
+                          <option value="Béja">Béja</option>
+                          <option value="Ben Arous">Ben Arous</option>
+                          <option value="Bizerte">Bizerte</option>
+                          <option value="Gabes">Gabes</option>
+                          <option value="Gafsa">Gafsa</option>
+                          <option value="Jendouba">Jendouba</option>
+                          <option value="Kairouan">Kairouan</option>
+                          <option value="Kasserine">Kasserine</option>
+                          <option value="Kebili">Kebili</option>
+                          <option value="La Manouba">La Manouba</option>
+                          <option value="Le Kef">Le Kef</option>
+                          <option value="Mahdia">Mahdia</option>
+                          <option value="Médenine">Médenine</option>
+                          <option value="Monastir">Monastir</option>
+                          <option value="Nabeul">Nabeul</option>
+                          <option value="Sfax">Sfax</option>
+                          <option value="Sidi Bouzid">Sidi Bouzid</option>
+                          <option value="Siliana">Siliana</option>
+                          <option value="Sousse">Sousse</option>
+                          <option value="Tataouine">Tataouine</option>
+                          <option value="Tozeur">Tozeur</option>
+                          <option value="Tunis">Tunis</option>
+                          <option value="Zaghouan">Zaghouan</option>
+                      </select >
+                    </div>
+                  </div>
+                </div> 
+                <!--  button  -->              
+                <div class="form-group">
+                  <input type="submit" value="Enregistrer" name="enregistrer"  class="btn float-right login_btn">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div> 
+  <!------------------Table liste des agents bncaires-------------->
+  <div class="container" style=" position: fixed; margin-left: 15%; margin-top: 0%; " [hidden]=" afficherListeAgents">
+    <div  id="pdfTable" #pdfTable >
+      <div class="row">
+        <div class="col-lg-10">
+          <h4 style="font-weight: bold">Liste des agents bancaire</h4>
+        </div>
+        <div class="col-lg-2">
+          <input  class="form-control mb-2 mr-sm-2" placeholder="Search ">
+        </div>
+      </div>
+  
+      <table  class="table table-bordered" style="text-align: center ; " >
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Prenom</th>
+          <th scope="col">Email</th>
+          <th scope="col">Adresse</th>
+          <th scope="col">Numéro de compte</th>
+          <th scope="col">Date de création</th>
+  
+          <th scope="col">Action</th>
+  
+        </tr>
+        </thead>
+        <tbody>
+        <tr >
+          <th scope="row"> --</th>
+          <td > --</td>
+          <td >--</td>
+          <td >--</td>
+          <td >--</td>
+          <td >--</td>
+          <td >--</td>
+          <td>
+            <button  > <i class="fas fa-edit" style=" color: green">&nbsp; Edit</i></button>
+            <button > <i class="far fa-trash-alt" style="  color: red">&nbsp; Delete</i> </button>
+          </td>
+        </tr>       
+        </tbody>
+      </table>
+     <!-- <nav aria-label="Page navigation example" style="position: center">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>-->
+  
+    </div>
+  
+  </div>
+  <!---------------------Table liste des clients------------------->
+    <div class="container" style="position: fixed; margin-left: 15%; margin-top: 0%; " [hidden]=" afficherListeClients">
+      <div  id="pdfTable" #pdfTable >
+        <div class="row">
+          <div class="col-lg-10">
+            <h4 style="font-weight: bold">Liste des clients</h4>
+          </div>
+          <div class="col-lg-2">
+            <input  class="form-control mb-2 mr-sm-2" placeholder="Search ">
+          </div>
+        </div>
+    
+        <table  class="table table-bordered" style="text-align: center ; " >
+          <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Email</th>
+            <th scope="col">Adresse</th>
+            <th scope="col">Numéro de compte</th>
+            <th scope="col">Date de création</th>    
+            <th scope="col">Action</th>   
+          </tr>
+          </thead>
+          <tbody>
+          <tr >
+            <th scope="row"> --</th>
+            <td > --</td>
+            <td >--</td>
+            <td >--</td>
+            <td >--</td>
+            <td >--</td>
+            <td >--</td>
+            <td>
+              <button  > <i class="fas fa-edit" style=" color: green">&nbsp; Edit</i></button>
+              <button > <i class="far fa-trash-alt" style="  color: red">&nbsp; Delete</i> </button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+       <!-- <nav aria-label="Page navigation example" style="position: center">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>-->
+    
+      </div>   
+</div>
